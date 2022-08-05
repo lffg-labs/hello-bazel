@@ -13,7 +13,7 @@
       devShells.default = pkgs.mkShell {
         name = "hello-bazel";
         packages = with pkgs; [
-          bazel_5 bazel-buildtools
+          bazel_5 bazel-buildtools jdk11
         ];
       };
     });
