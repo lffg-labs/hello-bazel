@@ -1,6 +1,13 @@
 cc_library(
-    name = "math",
-    srcs = glob(["*.c"]),
-    hdrs = glob(["*.h"]),
+    name = "add",
+    srcs = ["add.c"],
+    hdrs = ["add.h"],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "sub",
+    srcs = ["sub.c"],
+    hdrs = ["sub.h"],
     visibility = ["//visibility:public"],
 )
