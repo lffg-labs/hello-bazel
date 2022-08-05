@@ -1,0 +1,6 @@
+cc_library(
+    name = "math",
+    srcs = glob(["*.c"]),
+    hdrs = glob(["*.h"]),
+    visibility = ["//visibility:public"],
+)
